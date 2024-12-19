@@ -6,13 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 10:50:30 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/19 10:52:48 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/19 20:33:06 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	return (c >= '0' && c <= '9');
 }

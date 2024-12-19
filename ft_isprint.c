@@ -6,13 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 11:58:25 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/19 12:10:32 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/19 20:33:56 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	return (0);
+	return (c >= ' ' && c <= '~');
 }
