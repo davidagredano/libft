@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 10:49:25 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/20 11:10:40 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/20 11:41:22 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*dest_unsigned_char;
 	unsigned char	*src_unsigned_char;
 
