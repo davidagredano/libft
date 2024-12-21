@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 17:31:23 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/21 18:09:35 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ void	*ft_memset(void *s, int c, size_t n);
 //size_t	ft_strlcat(char *dst, const char *src, size_t size);
 //int	ft_toupper(int c);
 //int	ft_tolower(int c);
+//char	*ft_strchr(const char *s, int c);
 
 #endif
