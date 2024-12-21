@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 18:09:52 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 19:18:07 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/21 23:12:58 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strrchr(const char *s, int c)
 		if (s[i] == c)
 			return ((char *) &s[i]);
 	}
-	return (NULL);	
+	return (NULL);
 }
