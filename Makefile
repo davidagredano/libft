@@ -1,4 +1,4 @@
-SRCS	= ft_isalpha.c \
+SRCS = ft_isalpha.c \
 	  ft_isdigit.c \
 	  ft_isalnum.c \
 	  ft_isascii.c \
@@ -9,7 +9,9 @@ SRCS	= ft_isalpha.c \
 	  ft_memcpy.c \
 	  ft_memmove.c \
 	  ft_strlcpy.c \
-	  ft_strlcat.c
+	  ft_strlcat.c \
+	  ft_toupper.c \
+	  ft_tolower.c
 
 OBJS	= $(SRCS:.c=.o)
 
