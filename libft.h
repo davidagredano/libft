@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/23 17:11:42 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/23 17:44:05 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 //int	ft_atoi(const char *nptr);
 //void	*ft_calloc(size_t nmemb, size_t size);
 //char	*ft_strdup(const char *s);
+//char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
