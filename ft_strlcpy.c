@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 12:18:51 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 18:22:52 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/23 17:23:50 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = src[i];
 		i++;
 	}
-	if (i < size)
-		dst[i] = '\0';
+	dst[i] = '\0';
 	return (ft_strlen(src));
 }
