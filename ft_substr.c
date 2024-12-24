@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:44:22 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/23 18:44:17 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/24 10:00:23 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		size = len + 1;
 
-	substr = (char *) malloc(size);
+	substr = (char *) ft_calloc(size, sizeof(char));
 	if (!substr)
 		return (NULL);
 
