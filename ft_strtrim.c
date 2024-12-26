@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 10:30:08 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/24 12:56:18 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/26 19:47:12 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,15 +52,14 @@ static size_t	ft_get_len(char const *s1, char const *set)
 	size_t	i;
 	size_t	j;
 
-	i = ft_strlen(s1) - 1;
-	while (i >= 0)
+	i = ft_strlen(s1);
+	while (--i > 0)
 	{
 		j = 0;
 		while (s1[i] != set[j] && set[j] != '\0')
 			j++;
 		if (set[j] == '\0')
 			break ;
-		i--;
 	}
 	return (i + 1);
 }
