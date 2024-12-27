@@ -35,6 +35,10 @@ SRCS = ft_isalpha.c \
 
 OBJS	= $(SRCS:.c=.o)
 
+BONUS_SRCS = ft_lstnew_bonus.c
+
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
 NAME	= libft.a
 
 CC	= cc
@@ -55,8 +59,11 @@ $(NAME): $(OBJS)
 %.o: %.c libft.h Makefile
 	$(CC) -c $(CFLAGS) -o $@ $< 
 
+bonus: $(OBJS) $(BONUS_OBJS)
+	$(LIBC) $(NAME) $^
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
