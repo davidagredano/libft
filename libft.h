@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 10:33:36 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/27 11:25:10 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 //char	**ft_split(char const *s, char c);
 //char	*ft_itoa(int n);
 //char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
