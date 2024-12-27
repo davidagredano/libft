@@ -35,7 +35,8 @@ SRCS = ft_isalpha.c \
 
 OBJS	= $(SRCS:.c=.o)
 
-BONUS_SRCS = ft_lstnew_bonus.c
+BONUS_SRCS = ft_lstnew_bonus.c \
+			 ft_lstadd_front_bonus.c
 
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
