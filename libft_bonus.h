@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 12:29:48 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/28 13:15:49 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,6 @@ t_list	*ft_lstlast(t_list *lst);
 //void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 //void	ft_lstclear(t_list **lst, void (*del)(void *));
+//void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 #endif
