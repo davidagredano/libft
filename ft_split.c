@@ -6,13 +6,13 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 13:32:44 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/24 19:01:21 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/28 17:25:54 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t ft_count_words(char const *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	n;
 	int		inword;
@@ -38,7 +38,7 @@ static size_t ft_count_words(char const *s, char c)
 char	*ft_get_next_word(const char *s, char c)
 {
 	size_t	wordlen;
-	char 	*word;
+	char	*word;
 	size_t	j;
 
 	wordlen = 0;
