@@ -6,81 +6,85 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 13:32:44 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 17:25:54 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/29 12:11:17 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_count_words(char const *s, char c)
+static size_t	ft_count_substrs(char *str, char c);
+static size_t	ft_next_substr_len(char *str, char c);
+static int		ft_alloc_substr(char *s, size_t len, char **substrs, size_t i);
+
+char	**ft_split(char const *s, char c)
+{
+	char	**substrs;
+	size_t	substrs_i;
+	size_t	substr_len;
+	char	*ptr;
+
+	ptr = (char *) s;
+	substrs = (char **) ft_calloc(ft_count_substrs(ptr, c) + 1, sizeof(char *));
+	if (!substrs)
+		return (NULL);
+	substrs_i = 0;
+	while (*ptr != '\0')
+	{
+		if (*ptr == c)
+			ptr++;
+		else
+		{
+			substr_len = ft_next_substr_len(ptr, c);
+			if (!ft_alloc_substr(ptr, substr_len, substrs, substrs_i))
+				return (NULL);
+			substrs_i++;
+			ptr += substr_len;
+		}
+	}
+	substrs[substrs_i] = NULL;
+	return (substrs);
+}
+
+static size_t	ft_count_substrs(char *str, char c)
 {
 	size_t	n;
-	int		inword;
-	size_t	i;
 
 	n = 0;
-	inword = 0;
-	i = 0;
-	while (s[i] != '\0')
+	while (*str != '\0')
 	{
-		if (s[i] != c && inword == 0)
+		if (*str == c)
+			str++;
+		else
 		{
 			n++;
-			inword = 1;
+			str += ft_next_substr_len(str, c);
 		}
-		else if (s[i] == c && inword == 1)
-			inword = 0;
-		i++;
 	}
 	return (n);
 }
 
-char	*ft_get_next_word(const char *s, char c)
+static size_t	ft_next_substr_len(char *str, char c)
 {
-	size_t	wordlen;
-	char	*word;
-	size_t	j;
-
-	wordlen = 0;
-	j = 0;
-	while (s[j] != c && s[j] != '\0')
-	{
-		wordlen++;
-		j++;
-	}
-	word = ft_substr(s, 0, wordlen);
-	if (!word)
-		return (NULL);
-	return (word);
-}
-
-char	**ft_split(char const *s, char c)
-{
-	char	**strs;
-	size_t	nstrs;
-	size_t	strs_i;
-	int		inword;
 	size_t	i;
 
-	nstrs = ft_count_words(s, c);
-	strs = (char **) ft_calloc(nstrs + 1, sizeof(char *));
-	if (!strs)
-		return (NULL);
-	inword = 0;
-	strs_i = 0;
 	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] != c && inword == 0)
-		{
-			strs[strs_i] = ft_get_next_word(&s[i], c);
-			strs_i++;
-			inword = 1;
-		}
-		else if (s[i] == c && inword == 1)
-			inword = 0;
+	while (str[i] != '\0' && str[i] != c)
 		i++;
+	return (i);
+}
+
+static int	ft_alloc_substr(char *s, size_t len, char **substrs, size_t i)
+{
+	substrs[i] = ft_substr(s, 0, len);
+	if (!substrs[i])
+	{
+		while (i > 0)
+		{
+			i--;
+			free(substrs[i]);
+		}
+		free(substrs);
+		return (0);
 	}
-	strs[strs_i] = NULL;
-	return (strs);
+	return (1);
 }
