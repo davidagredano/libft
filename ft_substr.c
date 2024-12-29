@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:44:22 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 14:13:06 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/29 15:15:55 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr = (char *) ft_calloc(size, sizeof(char));
 	if (!substr)
 		return (NULL);
-	if (size == 1)
-		ft_strlcpy(substr, "", size);
-	else
-		ft_strlcpy(substr, &s[start], size);
+	if (size > 1)
+		ft_strlcpy(substr, s + start, size);
 	return (substr);
 }
