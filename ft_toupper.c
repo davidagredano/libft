@@ -6,18 +6,13 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 17:28:04 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 17:53:50 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/29 15:36:22 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_islower(int c)
-{
-	return (c >= 'a' && c <= 'z');
-}
-
 int	ft_toupper(int c)
 {
-	if (ft_islower(c))
+	if (c >= 'a' && c <= 'z')
 		return (c -= ('a' - 'A'));
 	return (c);
 }
