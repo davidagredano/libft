@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 12:18:51 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/23 17:23:50 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:53:14 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	i = 0;
 	if (size == 0)
 		return (ft_strlen(src));
-	while ((src[i] != '\0') && (i < size - 1))
+	while (src[i] != '\0' && i < size - 1)
 	{
 		dst[i] = src[i];
 		i++;
