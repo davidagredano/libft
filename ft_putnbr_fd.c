@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 12:23:55 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 13:10:31 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 10:34:52 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putnbr_fd(int n, int fd)
 
 	if (n == -2147483648)
 	{
-		write(fd, "-2147483648", 12);
+		write(fd, "-2147483648", 11);
 		return ;
 	}
 	if (n < 0)
