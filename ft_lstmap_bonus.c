@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 15:59:30 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 17:02:18 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:36:22 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_node;
 	void	*new_content;
 
-	if (f == NULL || del == NULL)
+	if (!f || !del)
 		return (NULL);
 	new_lst = NULL;
-	while (lst != NULL)
+	while (lst)
 	{
 		new_content = f(lst->content);
 		if (new_content == NULL)
@@ -32,7 +32,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ft_lstadd_back(&new_lst, new_node);
 		lst = lst->next;
 	}
-	if (lst != NULL)
+	if (lst)
 	{
 		free(new_content);
 		ft_lstclear(&new_lst, del);

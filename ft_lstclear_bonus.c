@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 12:17:19 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 13:06:59 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:32:45 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next;
 
-	if (del == NULL)
+	if (!*lst || !del)
 		return ;
-	while (*lst != NULL)
-	{
-		next = (*lst)->next;
-		ft_lstdelone(*lst, del);
-		*lst = next;
-	}
+	next = (*lst)->next;
+	ft_lstdelone(*lst, del);
+	*lst = next;
 }

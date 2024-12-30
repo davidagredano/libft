@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 20:23:23 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 21:25:27 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:30:27 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new != NULL)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	if (!new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

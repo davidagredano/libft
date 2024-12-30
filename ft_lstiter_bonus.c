@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 13:15:25 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 13:24:07 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:33:40 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (f == NULL)
+	if (!f)
 		return ;
-	while (lst != NULL)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

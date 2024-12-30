@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 09:30:12 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/28 09:32:49 by dagredan         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:38:37 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	size;
 
 	size = 0;
-	while (lst != NULL)
+	while (lst)
 	{
 		size++;
 		lst = lst->next;
