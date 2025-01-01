@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 22:52:42 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 23:09:59 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:23:00 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Compares two memory areas byte by byte.
+ * Returns 0 if identical, difference between first non-matching bytes otherwise
+ * The bytes compared are interpreted as unsigned char.
+ */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

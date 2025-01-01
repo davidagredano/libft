@@ -6,9 +6,14 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:15:38 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/19 20:32:34 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:08:42 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * Checks if a character is alphabetic (a-z or A-Z).
+ * Returns 1 if character is alphabetic, 0 otherwise.
+ */
 
 static int	ft_islower(int c)
 {

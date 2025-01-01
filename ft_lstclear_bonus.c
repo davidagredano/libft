@@ -6,11 +6,18 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 12:17:19 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/31 16:07:00 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:43:49 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+
+/**
+ * Deletes and frees the list element pointed to,
+ * as well as all following elements.
+ * The function uses the provided del function
+ * to free the content of each element.
+ */
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 15:37:25 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/29 14:21:06 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:15:55 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Appends src to the end of dest, ensuring NUL-termination within size bytes.
+ * Returns the total length of the string it tried to create (dest + src).
+ * Note that if no NUL is found traversing dest, returns (size + src).
+ */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

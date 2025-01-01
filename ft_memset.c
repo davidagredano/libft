@@ -6,11 +6,16 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 14:40:54 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/20 11:42:20 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:13:08 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Fills a block of memory with a specified byte value.
+ * Returns a pointer to the memory area.
+ */
 
 void	*ft_memset(void *s, int c, size_t n)
 {

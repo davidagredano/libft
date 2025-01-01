@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:44:22 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/29 15:15:55 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:30:01 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Extracts a substring from a string starting at index start and of length len.
+ * If start is beyond the length of s, returns an empty string.
+ * Returns the allocated substring, or NULL if allocation fails.
+ */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

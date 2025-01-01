@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 13:32:44 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/29 12:11:17 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:32:36 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 static size_t	ft_count_substrs(char *str, char c);
 static size_t	ft_next_substr_len(char *str, char c);
 static int		ft_alloc_substr(char *s, size_t len, char **substrs, size_t i);
+
+/**
+ * Splits a string into an array of substrings, using a delimiter character.
+ * Allocates memory for the array and each substring, with the array ending
+ * with a NULL pointer.
+ * Returns the array of substrings, or NULL if allocation fails.
+ */
 
 char	**ft_split(char const *s, char c)
 {

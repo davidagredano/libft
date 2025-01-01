@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 10:30:08 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/29 15:32:37 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:31:41 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 static unsigned int	ft_get_start(char const *s1, char const *set);
 static size_t		ft_get_len(char const *s1, char const *set);
+
+/**
+ * Removes all characters from the beginning and end of a string
+ * that are present in a set of characters.
+ * Returns the trimmed string, or NULL if allocation fails.
+ */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

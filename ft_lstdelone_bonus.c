@@ -6,11 +6,16 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 10:30:18 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/30 13:32:21 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:39:06 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+
+/**
+ * Deletes a single element from a list, freeing its memory.
+ * The function also calls the provided function to free the element's content.
+ */
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

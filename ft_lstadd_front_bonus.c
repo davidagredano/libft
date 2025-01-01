@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 20:23:23 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/30 13:30:27 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:37:18 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+
+/**
+ * Adds a new element at the beginning of a list.
+ * The new element becomes the first element, and its next pointer
+ * points to the previous first element.
+ */
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

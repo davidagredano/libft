@@ -6,11 +6,16 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 09:56:41 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/30 13:29:26 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:38:29 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+
+/**
+ * Adds a new element at the end of a list.
+ * The previous last element points to the new element.
+ */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

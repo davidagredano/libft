@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 11:32:20 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 10:20:07 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:33:10 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Converts an integer to a string representation.
+ * Allocates memory for the resulting string and returns it,
+ * or NULL if allocation fails.
+ */
 
 int	ft_nlen(int n)
 {

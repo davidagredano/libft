@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 11:25:14 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 10:51:48 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:14:23 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Copies bytes from source to destination.
+ * Returns a pointer to the destination area.
+ * Safely handles overlapping memory.
+ */
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,11 +6,18 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 15:59:30 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/30 13:36:22 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:40:56 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_bonus.h"
+
+/**
+ * Iterates through a list, applying the given function
+ * to the content of each element.
+ * Creates a new list with the results of the function applied to each element.
+ * Returns the new list, or NULL if memory allocation fails.
+ */
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

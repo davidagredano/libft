@@ -6,11 +6,16 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 16:45:23 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/24 09:39:10 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 22:01:23 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Duplicates a string by allocating enough memory and copying the content.
+ * Returns a pointer to the new string, or NULL if allocation fails.
+ */
 
 char	*ft_strdup(const char *s)
 {

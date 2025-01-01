@@ -6,11 +6,17 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 21:56:49 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/21 23:12:37 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:20:17 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Locates the first occurrence of a byte in a memory area.
+ * Returns a pointer to the matching byte or NULL if not found.
+ * All bytes are interpreted as unsigned char.
+ */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

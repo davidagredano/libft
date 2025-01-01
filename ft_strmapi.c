@@ -6,11 +6,18 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 10:32:56 by dagredan          #+#    #+#             */
-/*   Updated: 2024/12/27 11:10:58 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/01 21:33:53 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * Applies a function to each character of a string,
+ * passing both the character and its index as arguments,
+ * and creating a new string with the results.
+ * Returns the newly allocated string, or NULL if allocation fails.
+ */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
