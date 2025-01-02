@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 21:56:49 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:20:17 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 22:46:12 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (s_unsigned_char[i] == (unsigned char) c)
-			return ((void *) &s_unsigned_char[i]);
+			return ((void *) s + i);
 		i++;
 	}
 	return (NULL);
