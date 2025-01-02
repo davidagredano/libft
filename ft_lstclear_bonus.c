@@ -6,11 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 12:17:19 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:43:49 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 21:46:53 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Deletes and frees the list element pointed to,

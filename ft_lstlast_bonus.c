@@ -6,11 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 09:42:08 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:38:15 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 21:47:14 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Returns the last element of the list.

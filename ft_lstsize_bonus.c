@@ -6,11 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 09:30:12 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:37:47 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 21:47:34 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Counts the number of element in a list.

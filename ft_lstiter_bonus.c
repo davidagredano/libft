@@ -6,11 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 13:15:25 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:44:09 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 21:47:07 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Iterates through a list, applying the given function

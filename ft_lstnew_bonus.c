@@ -6,11 +6,11 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 19:14:58 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:36:48 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/02 21:47:27 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
 /**
  * Creates a new list element with the given content.
