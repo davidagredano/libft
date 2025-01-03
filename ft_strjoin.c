@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 18:49:24 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:30:28 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:47:21 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*newstr;
 	int		memsize;
 
+	if (!s1 || !s2)
+		return (NULL);
 	memsize = ft_strlen(s1) + ft_strlen(s2) + 1;
 	newstr = (char *) ft_calloc(memsize, sizeof(char));
 	if (!newstr)
