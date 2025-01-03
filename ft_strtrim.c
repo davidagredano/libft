@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 10:30:08 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:31:41 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:50:20 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	unsigned int	start;
 	size_t			len;
 
+	if (!s1 || !set)
+		return (NULL);
 	start = ft_get_start(s1, set);
 	len = ft_get_len(s1 + start, set);
 	new = ft_substr(s1, start, len);
