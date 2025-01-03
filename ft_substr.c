@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:44:22 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:30:01 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:28:14 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	strlen;
 	size_t	size;
 
+	if (!s)
+		return (NULL);
 	strlen = ft_strlen(s);
 	if (start >= strlen)
 		size = 1;
