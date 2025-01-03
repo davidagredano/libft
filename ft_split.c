@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/24 13:32:44 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:32:36 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/03 12:16:05 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	ft_count_substrs(char *str, char c);
 static size_t	ft_next_substr_len(char *str, char c);
-static int		ft_alloc_substr(char *s, size_t len, char **substrs, size_t i);
+static int		ft_alloc_substr(char **ptr, size_t len, char **arr, size_t *i);
 
 /**
  * Splits a string into an array of substrings, using a delimiter character.
@@ -30,6 +30,8 @@ char	**ft_split(char const *s, char c)
 	size_t	substr_len;
 	char	*ptr;
 
+	if (!s)
+		return (NULL);
 	ptr = (char *) s;
 	substrs = (char **) ft_calloc(ft_count_substrs(ptr, c) + 1, sizeof(char *));
 	if (!substrs)
@@ -42,10 +44,8 @@ char	**ft_split(char const *s, char c)
 		else
 		{
 			substr_len = ft_next_substr_len(ptr, c);
-			if (!ft_alloc_substr(ptr, substr_len, substrs, substrs_i))
+			if (!ft_alloc_substr(&ptr, substr_len, substrs, &substrs_i))
 				return (NULL);
-			substrs_i++;
-			ptr += substr_len;
 		}
 	}
 	substrs[substrs_i] = NULL;
@@ -80,18 +80,20 @@ static size_t	ft_next_substr_len(char *str, char c)
 	return (i);
 }
 
-static int	ft_alloc_substr(char *s, size_t len, char **substrs, size_t i)
+static int	ft_alloc_substr(char **ptr, size_t len, char **arr, size_t *i)
 {
-	substrs[i] = ft_substr(s, 0, len);
-	if (!substrs[i])
+	arr[*i] = ft_substr(*ptr, 0, len);
+	if (!arr[*i])
 	{
-		while (i > 0)
+		while (*i > 0)
 		{
-			i--;
-			free(substrs[i]);
+			(*i)--;
+			free(arr[*i]);
 		}
-		free(substrs);
+		free(arr);
 		return (0);
 	}
+	*i += 1;
+	*ptr += len;
 	return (1);
 }
