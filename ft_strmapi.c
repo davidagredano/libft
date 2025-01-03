@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 10:32:56 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:33:53 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:07:30 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*new;
 	unsigned int	i;
 
+	if (!s || !f)
+		return (NULL);
 	new = (char *) ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!new)
 		return (NULL);
