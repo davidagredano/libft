@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 11:32:20 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:33:10 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/11 18:15:46 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
  * or NULL if allocation fails.
  */
 
-int	ft_nlen(int n)
+static int	ft_nlen(int n)
 {
 	if (n / 10 == 0)
 		return (1);
 	return (1 + ft_nlen(n / 10));
 }
 
-int	ft_neg_sign(int n)
+static int	ft_neg_sign(int n)
 {
 	return (n < 0);
 }
