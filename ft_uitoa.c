@@ -6,38 +6,43 @@
 /*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 18:15:17 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/11 18:39:33 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/12 11:54:22 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * Converts an unsigned integer to a string representation.
+ * Converts an unsigned integer to a string representation (using lowercase).
  * Allocates memory for the resulting string and returns it,
  * or NULL if allocation fails.
  */
 
-static int	ft_nlen(unsigned int n)
+static int	ft_nlen(unsigned int n, int radix)
 {
-	if (n / 10 == 0)
+	if (n / radix == 0)
 		return (1);
-	return (1 + ft_nlen(n / 10));
+	return (1 + ft_nlen(n / radix, radix));
 }
 
-char	*ft_uitoa(unsigned int n)
+char	*ft_uitoa(unsigned int n, int radix)
 {
 	char	*str;
 	int		i;
 
-	str = (char *) ft_calloc(ft_nlen(n) + 1, sizeof(char));
+	if (radix < 2 || radix > 36)
+		return (NULL);
+	str = (char *) ft_calloc(ft_nlen(n, radix) + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	i = ft_nlen(n);
+	i = ft_nlen(n, radix);
 	while (--i >= 0)
 	{
-		str[i] = (n % 10) + '0';
-		n = n / 10;
+		if (n % radix < 10)
+			str[i] = (n % radix) + '0';
+		else
+			str[i] = ((n - 10) % radix) + 'a';
+		n = n / radix;
 	}
 	return (str);
 }
