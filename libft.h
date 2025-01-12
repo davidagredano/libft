@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/12 11:45:01 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/01/12 12:41:58 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_uitoa(unsigned int n, int radix);
 char	*ft_uitoa_caps(unsigned int n, int radix);
+char	*ft_ultoa(unsigned long n, int radix);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
