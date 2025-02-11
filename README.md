@@ -1,7 +1,7 @@
 <div align="center">
-  <a href="https://profile.intra.42.fr/users/dagredan" target="_blank" title="My score"><img src="https://img.shields.io/badge/125%2F100-5CB85C?style=for-the-badge"></a>
-  <a href="https://profile.intra.42.fr/users/dagredan" target="_blank" title="See my student profile"><img src="https://img.shields.io/badge/42_barcelona-222?style=for-the-badge"></a>
-  <a href="https://www.linkedin.com/in/david-agredano" target="_blank" title="See my LinkedIn profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge"></a>
+  <a href="https://profile.intra.42.fr/users/dagredan" title="My score"><img src="https://img.shields.io/badge/125%2F100-5CB85C?style=for-the-badge"></a>
+  <a href="https://profile.intra.42.fr/users/dagredan" title="See my student profile"><img src="https://img.shields.io/badge/42_barcelona-222?style=for-the-badge"></a>
+  <a href="https://www.linkedin.com/in/david-agredano" title="See my LinkedIn profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge"></a>
 </div>
 
 <h1 align="center">Libft</h1>
