@@ -6,7 +6,7 @@
 /*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:50:07 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/18 18:52:28 by dagredan         ###   ########.fr       */
+/*   Updated: 2025/02/12 19:59:38 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	*ft_strtok(char *str, const char *delim);
 char	*ft_itoa(int n);
 char	*ft_uitoa(unsigned int n, int radix);
 char	*ft_uitoa_caps(unsigned int n, int radix);

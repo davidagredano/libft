@@ -68,7 +68,8 @@ This library includes functions for handling strings, memory management, type co
 - [`ft_substr`](https://github.com/davidagredano/libft/blob/master/ft_substr.c?ts=4) - Extracts a substring from a string starting at index *start* and of length *len*.
 - [`ft_strjoin`](https://github.com/davidagredano/libft/blob/master/ft_strjoin.c?ts=4) - Concatenates two strings into a new string.
 - [`ft_strtrim`](https://github.com/davidagredano/libft/blob/master/ft_strtrim.c?ts=4) - Removes all characters from the beginning and end of a string
-- [`ft_split`](https://github.com/davidagredano/libft/blob/master/ft_split.c?ts=4) - Splits a string into an array of substrings, using a delimiter character.
+- [`ft_split`](https://github.com/davidagredano/libft/blob/master/ft_split.c?ts=4) - Splits a string into an array of substrings using a delimiter character.
+- [`ft_strtok`](https://github.com/davidagredano/libft/blob/master/ft_strtok.c?ts=4) - Extracts tokens from a string using the delimiter characters.
 - [`ft_strmapi`](https://github.com/davidagredano/libft/blob/master/ft_strmapi.c?ts=4) - Creates a new string with by applying a function to the original string.
 - [`ft_striteri`](https://github.com/davidagredano/libft/blob/master/ft_striteri.c?ts=4) - Applies a function to each character of a string.
 
