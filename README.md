@@ -62,6 +62,7 @@ This library includes functions for handling strings, memory management, type co
 - [`ft_strlcat`](https://github.com/davidagredano/libft/blob/master/ft_strlcat.c?ts=4) - Appends src to the end of dest, ensuring NUL-termination within size bytes.
 - [`ft_strchr`](https://github.com/davidagredano/libft/blob/master/ft_strchr.c?ts=4) - Finds the first occurrence of a character in a string.
 - [`ft_strrchr`](https://github.com/davidagredano/libft/blob/master/ft_strrchr.c?ts=4) - Finds the last occurrence of a character in a string.
+- [`ft_strcmp`](https://github.com/davidagredano/libft/blob/master/ft_strcmp.c?ts=4) - Compares two strings.
 - [`ft_strncmp`](https://github.com/davidagredano/libft/blob/master/ft_strncmp.c?ts=4) - Compares up to n characters of two strings.
 - [`ft_strnstr`](https://github.com/davidagredano/libft/blob/master/ft_strnstr.c?ts=4) - Searches for a substring in a string up to *len* characters.
 - [`ft_strdup`](https://github.com/davidagredano/libft/blob/master/ft_strdup.c?ts=4) - Duplicates a string by allocating enough memory and copying the content.
