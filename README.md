@@ -48,8 +48,8 @@ This library includes functions for handling strings, memory management, type co
 
 - [`ft_memset`](https://github.com/davidagredano/libft/blob/master/ft_memset.c?ts=4) - Fills a block of memory with a specified byte value.
 - [`ft_bzero`](https://github.com/davidagredano/libft/blob/master/ft_bzero.c?ts=4) - Fills a block of memory with zeros.
-- [`ft_memcpy`](https://github.com/davidagredano/libft/blob/master/ft_memcpy.c?ts=4) - Copies bytes from source to destination memory area.
-- [`ft_memmove`](https://github.com/davidagredano/libft/blob/master/ft_memmove.c?ts=4) - Copies bytes from source to destination.
+- [`ft_memcpy`](https://github.com/davidagredano/libft/blob/master/ft_memcpy.c?ts=4) - Copies bytes from *src* to *dest* memory area.
+- [`ft_memmove`](https://github.com/davidagredano/libft/blob/master/ft_memmove.c?ts=4) - Copies bytes from *src* to *dest*.
 - [`ft_memchr`](https://github.com/davidagredano/libft/blob/master/ft_memchr.c?ts=4) - Locates the first occurrence of a byte in a memory area.
 - [`ft_memcmp`](https://github.com/davidagredano/libft/blob/master/ft_memcmp.c?ts=4) - Compares two memory areas byte by byte.
 - [`ft_calloc`](https://github.com/davidagredano/libft/blob/master/ft_calloc.c?ts=4) - Allocates memory and initializes all bytes to zero.
@@ -58,12 +58,12 @@ This library includes functions for handling strings, memory management, type co
 
 - [`ft_strlen`](https://github.com/davidagredano/libft/blob/master/ft_strlen.c?ts=4) - Calculates the length of a string.
 - [`ft_strnlen`](https://github.com/davidagredano/libft/blob/master/ft_strnlen.c?ts=4) - Calculates the length of a string without exceeding the specified *maxlen*.
-- [`ft_strlcpy`](https://github.com/davidagredano/libft/blob/master/ft_strlcpy.c?ts=4) - Copies up to size-1 characters from src to dest, NUL-terminating the result.
-- [`ft_strlcat`](https://github.com/davidagredano/libft/blob/master/ft_strlcat.c?ts=4) - Appends src to the end of dest, ensuring NUL-termination within size bytes.
+- [`ft_strlcpy`](https://github.com/davidagredano/libft/blob/master/ft_strlcpy.c?ts=4) - Copies up to *size-1* characters from *src* to *dest*, NUL-terminating the result.
+- [`ft_strlcat`](https://github.com/davidagredano/libft/blob/master/ft_strlcat.c?ts=4) - Appends a string to the end of another string, ensuring NUL-termination within *size* bytes.
 - [`ft_strchr`](https://github.com/davidagredano/libft/blob/master/ft_strchr.c?ts=4) - Finds the first occurrence of a character in a string.
 - [`ft_strrchr`](https://github.com/davidagredano/libft/blob/master/ft_strrchr.c?ts=4) - Finds the last occurrence of a character in a string.
 - [`ft_strcmp`](https://github.com/davidagredano/libft/blob/master/ft_strcmp.c?ts=4) - Compares two strings.
-- [`ft_strncmp`](https://github.com/davidagredano/libft/blob/master/ft_strncmp.c?ts=4) - Compares up to n characters of two strings.
+- [`ft_strncmp`](https://github.com/davidagredano/libft/blob/master/ft_strncmp.c?ts=4) - Compares up to *n* characters of two strings.
 - [`ft_strnstr`](https://github.com/davidagredano/libft/blob/master/ft_strnstr.c?ts=4) - Searches for a substring in a string up to *len* characters.
 - [`ft_strdup`](https://github.com/davidagredano/libft/blob/master/ft_strdup.c?ts=4) - Duplicates a string by allocating enough memory and copying the content.
 - [`ft_substr`](https://github.com/davidagredano/libft/blob/master/ft_substr.c?ts=4) - Extracts a substring from a string starting at index *start* and of length *len*.
@@ -102,10 +102,6 @@ This library includes functions for handling strings, memory management, type co
 - [`ft_lstclear`](https://github.com/davidagredano/libft/blob/master/ft_lstclear.c?ts=4) -  Deletes and frees the list element pointed to, as well as all following elements.
 - [`ft_lstiter`](https://github.com/davidagredano/libft/blob/master/ft_lstiter.c?ts=4) - Applies the given function to the content of each element.
 - [`ft_lstmap`](https://github.com/davidagredano/libft/blob/master/ft_lstmap.c?ts=4) - Creates a new list by applying a function to the content of each element.
-
-<div align="right">
-    <a href="#libft"><b>Back to top ↥</b></a>
-</div>
 
 ## Compilation instructions
 
@@ -232,7 +228,3 @@ Hello! 👋 I'm David, the creator of this project. If you have any questions, s
 My email is [davidagredano@gmail.com](mailto:davidagredano@gmail.com).
 
 Looking forward to hearing from you!
-
-<div align="right">
-    <a href="#libft"><b>Back to top ↥</b></a>
-</div>
