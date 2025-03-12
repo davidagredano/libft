@@ -16,7 +16,6 @@
  * Returns the last element of the list.
  * Traverses the list until the last element, which has a NULL next pointer.
  */
-
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

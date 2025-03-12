@@ -17,7 +17,6 @@
  * Allocates memory for the element and sets its content and next pointer.
  * Returns a pointer to the new element, or NULL if allocation fails.
  */
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

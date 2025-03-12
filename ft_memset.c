@@ -16,7 +16,6 @@
  * Fills a block of memory with a specified byte value.
  * Returns a pointer to the memory area.
  */
-
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;

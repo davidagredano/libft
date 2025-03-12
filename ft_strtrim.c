@@ -20,7 +20,6 @@ static size_t		ft_get_len(char const *s1, char const *set);
  * that are present in a set of characters.
  * Returns the trimmed string, or NULL if allocation fails.
  */
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char			*new;

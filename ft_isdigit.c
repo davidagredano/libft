@@ -14,7 +14,6 @@
  * Checks if a character is a decimal digit (0-9).
  * Returns 1 if character is a digit, 0 otherwise.
  */
-
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');

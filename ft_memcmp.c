@@ -17,7 +17,6 @@
  * Returns 0 if identical, difference between first non-matching bytes otherwise
  * The bytes compared are interpreted as unsigned char.
  */
-
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*s1_unsigned_char;

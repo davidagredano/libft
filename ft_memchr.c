@@ -17,7 +17,6 @@
  * Returns a pointer to the matching byte or NULL if not found.
  * All bytes are interpreted as unsigned char.
  */
-
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*s_unsigned_char;

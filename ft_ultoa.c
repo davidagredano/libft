@@ -12,12 +12,6 @@
 
 #include "libft.h"
 
-/**
- * Converts an unsigned long to a string representation (using lowercase).
- * Allocates memory for the resulting string and returns it,
- * or NULL if allocation fails.
- */
-
 static int	ft_nlen(unsigned long n, int radix)
 {
 	if (n / radix == 0)
@@ -25,6 +19,11 @@ static int	ft_nlen(unsigned long n, int radix)
 	return (1 + ft_nlen(n / radix, radix));
 }
 
+/**
+ * Converts an unsigned long to a string representation (using lowercase).
+ * Allocates memory for the resulting string and returns it,
+ * or NULL if allocation fails.
+ */
 char	*ft_ultoa(unsigned long n, int radix)
 {
 	char	*str;

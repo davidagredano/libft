@@ -18,7 +18,6 @@
  * Warning: doesn't handle overlapping memory areas correctly.
  * Use memmove when memory regions might overlap.
  */
-
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;

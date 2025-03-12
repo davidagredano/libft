@@ -18,7 +18,6 @@
  * The function uses the provided del function
  * to free the content of each element.
  */
-
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next;

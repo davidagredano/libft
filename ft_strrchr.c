@@ -17,7 +17,6 @@
  * Returns a pointer to the last occurrence of the character,
  * or NULL if not found.
  */
-
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;

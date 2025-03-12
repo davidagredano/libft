@@ -17,7 +17,6 @@
  * The new element becomes the first element, and its next pointer
  * points to the previous first element.
  */
-
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new)

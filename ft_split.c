@@ -22,7 +22,6 @@ static int		ft_alloc_substr(char **ptr, size_t len, char **arr, size_t *i);
  * with a NULL pointer.
  * Returns the array of substrings, or NULL if allocation fails.
  */
-
 char	**ft_split(char const *s, char c)
 {
 	char	**substrs;

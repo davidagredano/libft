@@ -17,7 +17,6 @@
  * Returns the total length of the string it tried to create (dest + src).
  * Note that if no NUL is found traversing dest, returns (size + src).
  */
-
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;

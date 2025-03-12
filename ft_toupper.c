@@ -14,7 +14,6 @@
  * Converts a lowercase letter to uppercase.
  * Returns uppercase letter if applicable, original character otherwise.
  */
-
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

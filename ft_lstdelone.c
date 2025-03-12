@@ -16,7 +16,6 @@
  * Deletes a single element from a list, freeing its memory.
  * The function also calls the provided function to free the element's content.
  */
-
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (!lst || !del)

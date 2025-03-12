@@ -17,7 +17,6 @@
  * Returns the newly allocated string containing s1 followed by s2,
  * or NULL if allocation fails.
  */
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*newstr;

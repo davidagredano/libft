@@ -16,7 +16,6 @@
  * Fills a block of memory with zeros.
  * Returns nothing (void).
  */
-
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);

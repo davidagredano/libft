@@ -16,7 +16,6 @@
  * Writes a single character to the standard output.
  * Return the number of characters printed, or -1 on error.
  */
-
 int	ft_putchar(char c)
 {
 	return ((int) write(STDOUT_FILENO, &c, 1));

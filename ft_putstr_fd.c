@@ -16,7 +16,6 @@
  * Writes a string to the specified file descriptor.
  * Stops at the null terminator of the string.
  */
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)

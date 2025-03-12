@@ -17,7 +17,6 @@
  * If start is beyond the length of s, returns an empty string.
  * Returns the allocated substring, or NULL if allocation fails.
  */
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

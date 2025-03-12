@@ -14,7 +14,6 @@
  * Checks if a character is printable (32-126).
  * Returns 1 if character is printable, 0 otherwise.
  */
-
 int	ft_isprint(int c)
 {
 	return (c >= ' ' && c <= '~');

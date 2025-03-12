@@ -18,7 +18,6 @@
  * Includes protection against integer overflow in nmemb * size.
  * Returns a pointer to the allocated memory, or NULL if allocation fails.
  */
-
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	total_size;

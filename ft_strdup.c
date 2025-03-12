@@ -16,7 +16,6 @@
  * Duplicates a string by allocating enough memory and copying the content.
  * Returns a pointer to the new string, or NULL if allocation fails.
  */
-
 char	*ft_strdup(const char *s)
 {
 	char	*dup;

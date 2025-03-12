@@ -14,7 +14,6 @@
  * Checks if a character is within ASCII range (0-127).
  * Returns 1 if character is ASCII, 0 otherwise.
  */
-
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

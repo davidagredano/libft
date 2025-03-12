@@ -16,7 +16,6 @@
  * Writes a string to the specified file descriptor, followed by a newline.
  * Stops at the null terminator of the string.
  */
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)

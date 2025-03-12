@@ -16,7 +16,6 @@
  * Adds a new element at the end of a list.
  * The previous last element points to the new element.
  */
-
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!*lst)

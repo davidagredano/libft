@@ -15,7 +15,6 @@
 /**
  * Writes an integer to the specified file descriptor.
  */
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	digit;

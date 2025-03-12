@@ -17,7 +17,6 @@
  * Returns a pointer to the destination area.
  * Safely handles overlapping memory.
  */
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*dest_unsigned_char;

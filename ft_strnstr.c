@@ -17,7 +17,6 @@
  * searching only within the first len characters of big.
  * Returns a pointer to the start of the substring, or NULL if not found.
  */
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;

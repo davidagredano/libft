@@ -18,7 +18,6 @@
  * Creates a new list with the results of the function applied to each element.
  * Returns the new list, or NULL if memory allocation fails.
  */
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;

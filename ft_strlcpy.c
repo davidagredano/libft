@@ -17,7 +17,6 @@
  * Note that a byte for the NUL should be included in size.
  * Returns the total length of the string it tried to create (src).
  */
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

@@ -18,7 +18,6 @@
  * and creating a new string with the results.
  * Returns the newly allocated string, or NULL if allocation fails.
  */
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*new;

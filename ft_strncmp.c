@@ -17,7 +17,6 @@
  * The comparison is done using unsigned characters.
  * Returns 0 if the strings are equal, a positive or negative number otherwise.
  */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

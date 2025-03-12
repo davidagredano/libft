@@ -17,7 +17,6 @@
  * without its terminating null byte ('\0').
  * Return the number of characters printed, or -1 on error.
  */
-
 int	ft_putstr(const char *s)
 {
 	if (!s)

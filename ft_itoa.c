@@ -12,12 +12,6 @@
 
 #include "libft.h"
 
-/**
- * Converts an integer to a string representation.
- * Allocates memory for the resulting string and returns it,
- * or NULL if allocation fails.
- */
-
 static int	ft_nlen(int n)
 {
 	if (n / 10 == 0)
@@ -30,6 +24,11 @@ static int	ft_neg_sign(int n)
 	return (n < 0);
 }
 
+/**
+ * Converts an integer to a string representation.
+ * Allocates memory for the resulting string and returns it,
+ * or NULL if allocation fails.
+ */
 char	*ft_itoa(int n)
 {
 	char	*str;

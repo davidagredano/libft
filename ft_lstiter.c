@@ -18,7 +18,6 @@
  * The content of each element is modified in place,
  * the list itself is not modified.
  */
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!f)

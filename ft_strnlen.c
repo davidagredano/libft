@@ -16,7 +16,6 @@
  * Returns the number of character in the string pointed to by s, 
  * excluding NUL character, but at most maxlen.
  */
-
 size_t	ft_strnlen(const char *s, size_t maxlen)
 {
 	size_t	i;

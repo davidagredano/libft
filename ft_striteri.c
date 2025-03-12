@@ -17,7 +17,6 @@
  * passing both the character and its index as arguments.
  * Modifies the string in place; no new string is allocated.
  */
-
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
