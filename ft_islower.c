@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dagredan <dagredan@student.42barcelon      +#+  +:+       +#+        */
+/*   By: dagredan <dagredan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/18 12:15:38 by dagredan          #+#    #+#             */
-/*   Updated: 2025/01/01 21:08:42 by dagredan         ###   ########.fr       */
+/*   Created: 2025/03/12 21:20:25 by dagredan          #+#    #+#             */
+/*   Updated: 2025/03/12 21:20:28 by dagredan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
- * Checks if a character is alphabetic (A-Z or a-z).
- * Returns 1 if character is alphabetic, 0 otherwise.
+ * Checks if a character is a lowercase letter (a-z).
+ * Returns 1 if lowercase, 0 otherwise.
  */
-int	ft_isalpha(int c)
+int	ft_islower(int c)
 {
-	return (ft_isupper(c) || ft_islower(c));
+	return (c >= 'a' && c <= 'z');
 }

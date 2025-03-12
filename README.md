@@ -36,11 +36,14 @@ This library includes functions for handling strings, memory management, type co
 
 ### Character classification
 
-- [`ft_isalpha`](https://github.com/davidagredano/libft/blob/master/ft_isalpha.c?ts=4) - Checks if a character is alphabetic (a-z or A-Z).
+- [`ft_isupper`](https://github.com/davidagredano/libft/blob/master/ft_isupper.c?ts=4) - Checks if a character is an uppercase letter (A-Z).
+- [`ft_islower`](https://github.com/davidagredano/libft/blob/master/ft_islower.c?ts=4) - Checks if a character is an lowercase letter (a-z).
+- [`ft_isalpha`](https://github.com/davidagredano/libft/blob/master/ft_isalpha.c?ts=4) - Checks if a character is alphabetic (A-Z or a-z).
 - [`ft_isdigit`](https://github.com/davidagredano/libft/blob/master/ft_isdigit.c?ts=4) - Checks if a character is a decimal digit (0-9).
 - [`ft_isalnum`](https://github.com/davidagredano/libft/blob/master/ft_isalnum.c?ts=4) - Checks if a character is alphanumeric (a-z, A-Z, 0-9).
 - [`ft_isascii`](https://github.com/davidagredano/libft/blob/master/ft_isascii.c?ts=4) - Checks if a character is within ASCII range (0-127).
 - [`ft_isprint`](https://github.com/davidagredano/libft/blob/master/ft_isprint.c?ts=4) - Checks if a character is printable (32-126).
+- [`ft_isspace`](https://github.com/davidagredano/libft/blob/master/ft_isspace.c?ts=4) - Checks if a character is a whitespace character.
 - [`ft_toupper`](https://github.com/davidagredano/libft/blob/master/ft_toupper.c?ts=4) - Converts a lowercase letter to uppercase.
 - [`ft_tolower`](https://github.com/davidagredano/libft/blob/master/ft_tolower.c?ts=4) - Converts an uppercase letter to lowercase.
 

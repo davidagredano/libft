@@ -17,12 +17,6 @@
  * Stops conversion at the first non-digit character.
  * Returns the resulting integer.
  */
-
-static int	ft_isspace(char c)
-{
-	return (c == ' ' || (c >= '\t' && c <= '\r'));
-}
-
 int	ft_atoi(const char *nptr)
 {
 	int		accumulated;
