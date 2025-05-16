@@ -2,15 +2,14 @@ AR = ar
 ARFLAGS = rcs
 
 CC = cc
-CFLAGS = -MMD -Wall -Wextra -Werror
-COMPILE.c = $(CC) $(CFLAGS) -c
-OUTPUT_OPTION = -o $@
+CFLAGS = -MMD -Wall -Wextra -Werror -Iincludes
 
 RM = rm -f
 RMDIR = rm -rf
 
 
 NAME = libft.a
+SRCS_DIR = srcs
 PRINTF_DIR = printf/
 SRCS = ft_isupper.c ft_islower.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 	ft_isascii.c ft_isprint.c ft_isspace.c ft_strlen.c ft_strnlen.c \
@@ -37,8 +36,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $@ $^
 
-$(BUILD_DIR)/%.o: %.c $(BUILD_DIR)/%.d Makefile | $(BUILD_DIR)
-	$(COMPILE.c) $(OUTPUT_OPTION) $<
+$(BUILD_DIR)/%.o: $(SRCS_DIR)/%.c $(BUILD_DIR)/%.d Makefile | $(BUILD_DIR)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(BUILD_DIR):
 	mkdir -p $@
